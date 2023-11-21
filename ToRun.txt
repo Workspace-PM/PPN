@@ -1,0 +1,84 @@
+  
+Several Python libraries/modules required.  
+  
+    	import psutil
+	import itertools
+	import numpy as np
+	import sys
+	import re
+	import time
+	import math	
+	import csv
+	from scipy.spatial.distance import cosine, pdist, squareform
+	from Bio import SeqIO	
+	from scipy.cluster import hierarchy
+	import pandas as pd
+	from numpy import linalg as LA
+	import dendropy
+	import os
+	from scipy.stats import entropy
+	import resource
+
+
+These imports include:
+
+psutil: A cross-platform library for retrieving information on running processes and system utilization.
+
+itertools: A module providing various functions for creating iterators and combinatorial iterators.
+
+numpy (np): A library for numerical computing with support for large, multi-dimensional arrays and matrices.
+
+sys: A module providing access to some variables used or maintained by the interpreter and functions that interact with the interpreter.
+
+re: A module for regular expression operations.
+
+time: A module providing various time-related functions.
+
+math: A module providing mathematical functions and constants.
+
+csv: A module for reading and writing CSV files.
+
+scipy.spatial.distance: A module providing distance computation and distance-related functions.
+
+Bio.SeqIO: A module from the Biopython library for reading and writing sequence data in various formats.
+
+scipy.cluster.hierarchy: A module providing hierarchical clustering and linkage functions.
+
+pandas (pd): A library providing data manipulation and analysis tools.
+
+numpy.linalg (LA): A module providing linear algebra functions.
+
+dendropy: A library for phylogenetic computing.
+
+os: A module providing functions for interacting with the operating system.
+
+optparse: A module for parsing command-line options and arguments.
+
+scipy.stats.entropy: A function for calculating entropy from probability distributions.
+
+To install all the libraries mentioned in your code, you can use the following installation commands:
+
+psutil:
+pip install psutil
+
+numpy and scipy:
+pip install numpy scipy
+
+BioPython:
+pip install biopython
+
+pandas:
+pip install pandas
+
+dendropy:
+pip install dendropy
+
+
+Run PPN with the following command:
+
+python PPN.py data/fish_mtDNA.fasta data/dist_matrix.csv data/tree.nwk UPGMA
+
+or,
+
+python PPN.py data/fish_mtDNA.fasta data/dist_matrix.csv data/tree.nwk NJ
+
