@@ -61,9 +61,11 @@ def metric_finding(ss):
 		elif(i==size-1):
 			p= arr[i-4]*arr[i-3] *arr[i-2] *arr[i-1] *arr[i]
 			seq = np.append(seq,p)
+			i=i+2
 		elif(i==(size-2)):	
 			p= arr[i-4]*arr[i-3] *arr[i-2] *arr[i-1] *arr[i]*a[i+1]
 			seq = np.append(seq,p)	
+			i=i+2
 		value=np.sum(seq)
 		a.append(value)
 	return(a)
